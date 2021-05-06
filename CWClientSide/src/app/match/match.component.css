@@ -1,0 +1,44 @@
+table, th, td {
+    border: 2px solid rgb(32, 30, 30);
+    border-collapse: collapse;
+    
+  }
+
+  th, td {
+    padding: 5px;
+    text-align: center;
+  }
+  input{
+    text-decoration: none;
+      border: 2px solid white;
+      background-color:transparent;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      color:white;
+      padding: 10px 10px;
+      padding-top: 3px;
+      font-size: 20px;
+      border-color: white;
+      border-radius: 25px;
+  }
+  button{
+    padding: 10px;
+    text-decoration: none;
+      border: 2px solid white;
+      background-color: transparent;
+      color: white;
+      padding: 14px 28px;
+      font-size: 16px;
+      cursor: pointer;
+      border-color: white;
+      border-radius: 25px;
+      
+  }
+  button:hover{
+      background-color: rgba(255, 255, 255, .90);
+      color: rgb(5, 5, 5);
+  }
+  label{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      color:white;
+      font-size: 20px;
+  }

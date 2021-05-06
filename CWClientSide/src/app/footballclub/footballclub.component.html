@@ -1,0 +1,34 @@
+<div>
+  <div>
+    <h2 style="text-align: center;color: rgb(255, 255, 255);">Football Club table</h2>
+    <button (click)="drawTable()" >Display all teams</button>
+    <button (click)="sortGoals()">Sort according to goals</button>
+    <button (click)="sortWins()">Sort according to wins</button>
+  </div>
+</div>
+<div style=" padding: 20px;">
+<table style="width:100%;font-size: 150%;padding-top: 100%;">
+  <tr>
+    <th>Team Name</th>
+    <th>Location</th>
+    <th>Wins</th>
+    <th>Draws</th>
+    <th>Defeats</th>
+    <th>Goals Recived</th>
+    <th>Goals Scored</th>
+    <th>Points</th>
+    <th>No of Matches</th>
+  </tr>
+  <tr *ngFor="let fbclub of footballclubs" >
+    <td>{{fbclub.clubName}}</td>
+    <td>{{fbclub.location}}</td>
+    <td>{{fbclub.wins}}</td>
+    <td>{{fbclub.draws}}</td>
+    <td>{{fbclub.defeats}}</td>
+    <td>{{fbclub.receivedGoals}}</td>
+    <td>{{fbclub.scoredGoals}}</td>
+    <td>{{fbclub.currentPointOfClub}}</td>
+    <td>{{fbclub.noOfMatchedPlayed}}</td>
+  </tr>
+</table>
+</div>

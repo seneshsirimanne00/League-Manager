@@ -1,0 +1,32 @@
+    <div>
+        <h2 style="text-align: center;color: rgb(255, 255, 255);">Match table</h2>
+        <button (click)="generstematch()">generate a match</button>
+       <button (click)="sortMatchByDate()">sort matches according to date</button>
+    <div>
+        <label>Enter a Date to filter :  </label>
+        <input type="text" [(ngModel)]="searchDate"  placeholder=" DD/MM/YYYY ">
+        <button (click)=" searchAndSort()">search</button>
+    </div>
+    </div>
+    <div style=" padding: 20px;">
+    <table style="width:70%;font-size: 150%;padding-top: 100%; color: rgb(12, 11, 11);position: relative; left: 15%;">
+      <tr>
+        <th>Home team</th>
+        <th>Away team</th>
+        <th>Home team Score</th>
+        <th>Away team Score</th>
+        <th>Year</th>
+        <th>Month</th>
+        <th>Day</th>
+      </tr>
+      <tr *ngFor="let matchnew of matchs">
+        <td>{{matchnew.clubOne}}</td>
+        <td>{{matchnew.clubTwo}}</td>
+        <td>{{matchnew.clubOneScore}}</td>
+        <td>{{matchnew.clubTwoScore}}</td>
+        <td>{{matchnew.mdate.year}}</td>
+        <td>{{matchnew.mdate.month}}</td>
+        <td>{{matchnew.mdate.date}}</td>
+      </tr>
+    </table>
+    </div>
